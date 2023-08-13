@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'bus',
-  preset: '../../jest.preset.js',
+  displayName: 'train-ui',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/bus',
+  coverageDirectory: '../../../coverage/libs/train/ui',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

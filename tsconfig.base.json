@@ -15,10 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "bus": ["libs/bus/src/index.ts"],
-      "shared-ui": ["libs/shared-ui/src/index.ts"],
-      "shared/ui": ["libs/shared/ui/src/index.ts"],
-      "trains": ["libs/trains/src/index.ts"]
+      "@railmap/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@railmap/train/smart": ["libs/train/smart/src/index.ts"],
+      "@railmap/train/ui": ["libs/train/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

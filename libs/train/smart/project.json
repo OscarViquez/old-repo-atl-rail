@@ -1,7 +1,7 @@
 {
-  "name": "trains",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/trains/src",
+  "name": "train-smart",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/train/smart/src",
   "prefix": "lib",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/trains/jest.config.ts",
+        "jestConfig": "libs/train/smart/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -24,7 +24,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/trains/**/*.ts", "libs/trains/**/*.html"]
+        "lintFilePatterns": [
+          "libs/train/smart/**/*.ts",
+          "libs/train/smart/**/*.html"
+        ]
       }
     }
   }

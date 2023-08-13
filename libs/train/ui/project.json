@@ -1,7 +1,7 @@
 {
-  "name": "bus",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/bus/src",
+  "name": "train-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/train/ui/src",
   "prefix": "lib",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/bus/jest.config.ts",
+        "jestConfig": "libs/train/ui/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -24,7 +24,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/bus/**/*.ts", "libs/bus/**/*.html"]
+        "lintFilePatterns": ["libs/train/ui/**/*.ts", "libs/train/ui/**/*.html"]
       }
     }
   }

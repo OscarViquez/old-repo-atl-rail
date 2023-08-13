@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'trains',
-  preset: '../../jest.preset.js',
+  displayName: 'train-smart',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/trains',
+  coverageDirectory: '../../../coverage/libs/train/smart',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
