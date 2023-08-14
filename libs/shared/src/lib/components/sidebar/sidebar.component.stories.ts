@@ -22,8 +22,13 @@ export const Default = () => ({
     template: 'Displays Text',
 });
 
-export const sideBarPrimary = Template.bind({})
-sideBarPrimary.args = {
+export const sideBarLight = Template.bind({})
+sideBarLight.args = {
+    content: SiderbarMocks
+}
+
+export const sideBarDark = Template.bind({})
+sideBarDark.args = {
     content: SiderbarMocks
 }
 
