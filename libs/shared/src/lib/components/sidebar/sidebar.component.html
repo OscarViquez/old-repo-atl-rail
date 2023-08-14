@@ -1,1 +1,22 @@
-<p> {{this.content.logo}} </p>
+<nav class="sidebar">
+  <div class="sidebar-logo">
+    <img src="" alt="" class="sidebar-logo__img" />
+  </div>
+
+  <div class="nav">
+    <ng-container *ngFor="let nav of content.pages">
+      <a href="{{ nav.pageUrl }}" class="nav-btn">
+        <div class="nav-btn-logo">
+          <img
+            src="{{ nav.icon.url }}"
+            alt="{{ nav.icon.alt }}"
+            class="nav-btn-logo__img"
+          />
+        </div>
+        <div class="nav-btn-text">
+          {{ nav.pageName }}
+        </div>
+      </a>
+    </ng-container>
+  </div>
+</nav>
