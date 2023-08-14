@@ -8,6 +8,6 @@ import { SiderbarMocks } from './mocks/sidebar.mocks';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-  @Input() content!: Sidebar
+  @Input() content: Sidebar = SiderbarMocks
 
 }
