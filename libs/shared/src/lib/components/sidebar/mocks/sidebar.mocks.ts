@@ -1,77 +1,194 @@
-import { Sidebar } from "../models/sidebar.interfaces";
+import { Sidebar } from '../models/sidebar.interfaces';
 
-export const SiderbarMocks: Sidebar = {
-    logo: 'Logo Here',
-    icons: [{
-        alt: 'Open Menu',
-        url: '#'
-    },{
-        alt: 'Close Menu',
-        url: '#'
-    }],
-    pages: [{
-        icon: {
+export const SiderbarLightMocks: Sidebar = {
+   mode: 'light',
+   logo: {
+      alt: 'Logo',
+      url: 'https://atl-railmap-assets.netlify.app/images/logo-light.svg'
+   },
+   icons: [
+      {
+         alt: 'Open Menu',
+         url: '#'
+      },
+      {
+         alt: 'Close Menu',
+         url: '#'
+      }
+   ],
+   pages: [
+      {
+         active: true,
+         icon: {
             alt: 'Train icon',
             url: '#'
-        },
-        pageName: 'Trains',
-        pageUrl: '#',
-    },
-    {
-        icon: {
+         },
+         pageName: 'Trains',
+         pageUrl: '/trains'
+      },
+      {
+         active: false,
+         icon: {
             alt: 'Bus icon',
             url: '#'
-        },
-        pageName: 'Buses',
-        pageUrl: '#',
-    },
-    {
-        icon: {
+         },
+         pageName: 'Buses',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
             alt: 'Steet Car icon',
             url: '#'
-        },
-        pageName: 'Steet Car',
-        pageUrl: '#',
-    },
-    {
-        icon: {
+         },
+         pageName: 'Steet Car',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
             alt: 'Advisories icon',
             url: '#'
-        },
-        pageName: 'Advisories',
-        pageUrl: '#',
-    },
+         },
+         pageName: 'Advisories',
+         pageUrl: '#'
+      },
 
-    {
-        icon: {
+      {
+         active: false,
+         icon: {
             alt: 'Breeze Card icon',
             url: '#'
-        },
-        pageName: 'Breeze Card',
-        pageUrl: '#',
-    },
-    {
-        icon: {
+         },
+         pageName: 'Breeze Card',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
             alt: 'Dropdown icon',
             url: '#'
-        },
-        pageName: 'More',
-        pageUrl: '#',
-    }
-],
-    quickLinks: [{
-        alt: 'Contact Info',
-        label: 'Contact Info',
-        url: '#'
-    },
-    {
-        alt: 'News & Updates Page',
-        label: 'News & Updates',
-        url: '#'
-    },
-    {
-        alt: 'Accessibility Services Page',
-        label: 'Accessibility Services',
-        url: '#'
-    }]
-}
+         },
+         pageName: 'More',
+         pageUrl: '#'
+      }
+   ],
+   quickLinks: {
+      title: 'Quick Links',
+      links: [
+         {
+            label: 'Contact Info',
+            url: '#'
+         },
+         {
+            label: 'News & Updates',
+            url: '#'
+         },
+         {
+            label: 'Accessibility Services',
+            url: '#'
+         }
+      ]
+   }
+};
+
+export const SiderbarDarkMocks: Sidebar = {
+   mode: 'dark',
+   logo: {
+      alt: 'Logo',
+      url: 'https://atl-railmap-assets.netlify.app/images/logo-dark.svg'
+   },
+   icons: [
+      {
+         alt: 'Open Menu',
+         url: '#'
+      },
+      {
+         alt: 'Close Menu',
+         url: '#'
+      }
+   ],
+   pages: [
+      {
+         active: true,
+         icon: {
+            alt: 'Train icon',
+            url: '#'
+         },
+         pageName: 'Trains',
+         pageUrl: '/trains'
+      },
+      {
+         active: false,
+         icon: {
+            alt: 'Bus icon',
+            url: '#'
+         },
+         pageName: 'Buses',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
+            alt: 'Steet Car icon',
+            url: '#'
+         },
+         pageName: 'Steet Car',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
+            alt: 'Advisories icon',
+            url: '#'
+         },
+         pageName: 'Advisories',
+         pageUrl: '#'
+      },
+
+      {
+         active: false,
+         icon: {
+            alt: 'Breeze Card icon',
+            url: '#'
+         },
+         pageName: 'Breeze Card',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
+            alt: 'Dropdown icon',
+            url: '#'
+         },
+         pageName: 'More',
+         pageUrl: '#'
+      },
+      {
+         active: false,
+         icon: {
+            alt: 'Dropdown icon',
+            url: '#'
+         },
+         pageName: 'More',
+         pageUrl: '#'
+      }
+   ],
+   quickLinks: {
+      title: 'Quick Links',
+      links: [
+         {
+            label: 'Contact Info',
+            url: '#'
+         },
+         {
+            label: 'News & Updates',
+            url: '#'
+         },
+         {
+            label: 'Accessibility Services',
+            url: '#'
+         }
+      ]
+   }
+};

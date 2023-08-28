@@ -1,25 +1,25 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2022",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@railmap/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@railmap/train/smart": ["libs/train/smart/src/index.ts"],
-      "@railmap/train/ui": ["libs/train/ui/src/index.ts"],
-      "shared": ["libs/shared/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+   "compileOnSave": false,
+   "compilerOptions": {
+      "rootDir": ".",
+      "sourceMap": true,
+      "declaration": false,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "target": "es2022",
+      "module": "esnext",
+      "lib": ["es2020", "dom"],
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+         "@railmap/shared/ui": ["libs/shared/ui/src/index.ts"],
+         "@railmap/train/smart": ["libs/train/smart/src/index.ts"],
+         "@railmap/train/ui": ["libs/train/ui/src/index.ts"],
+         "@shared": ["libs/shared/src/index.ts"]
+      }
+   },
+   "exclude": ["node_modules", "tmp"]
 }
