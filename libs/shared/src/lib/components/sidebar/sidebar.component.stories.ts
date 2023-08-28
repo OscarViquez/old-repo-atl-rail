@@ -1,6 +1,6 @@
 import { Meta, Story, moduleMetadata } from '@storybook/angular';
 import { SidebarComponent } from './sidebar.component';
-import { SiderbarMocks } from './mocks/sidebar.mocks';
+import { SiderbarDarkMocks,SiderbarLightMocks } from './mocks/sidebar.mocks';
 
 export default {
   title: 'shared/Sidebar',
@@ -24,11 +24,11 @@ export const Default = () => ({
 
 export const sideBarLight = Template.bind({})
 sideBarLight.args = {
-    content: SiderbarMocks
+    content: SiderbarLightMocks
 }
 
 export const sideBarDark = Template.bind({})
 sideBarDark.args = {
-    content: SiderbarMocks
+    content: SiderbarDarkMocks
 }
 
